@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../auth.service';
+import { AuthService } from '../../shared/services/auth.service';
+import { CommonModule } from '@angular/common';
+import { HeaderComponent } from 'src/app/core/components/header/header.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
+  imports: [CommonModule, HeaderComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
